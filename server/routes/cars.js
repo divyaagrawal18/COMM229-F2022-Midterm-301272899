@@ -101,15 +101,15 @@ router.post("/edit/:id", (req, res, next) => {
 });
   
   // GET - process the delete
-  router.get("/delete/:price", (req, res, next) => {
+  router.get("/delete", (req, res, next) => {
   /*****************
    * ADD CODE HERE *
    *****************/
 
-   let price = req.params.price;
+  //  let price = req.params.price;
 
    car.remove(
-    { Price: { $eq: price } }, 
+    { Price: { $gt: 3000 } }, 
     (err) => {
      if (err) {
        console.log(err);

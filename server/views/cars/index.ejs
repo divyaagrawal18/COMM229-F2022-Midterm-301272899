@@ -47,7 +47,7 @@
       <!-- ------------------------ -->
                 <!--FIX the DELETE BUTTON HERE -->
                 <!-- ------------------------ -->
-       <form>
+       <!-- <form>
         <div class="from-group">
           <label for="priceTextField">Enter price</label>
           <input
@@ -59,10 +59,13 @@
             required
           />
         </div>
-      <!-- <a href="/cars-details/delete" class="btn btn-warning btn-sm"> -->
+        <a href="/cars-details/delete" class="btn btn-warning btn-sm">
         <a href="" id="deleteBtn" class="btn btn-warning" onclick="deleteCars()" >
         <i class="fa fa-trash"></i> Delete</a>
-      </form>
+      </form> -->
+
+      <a href="/cars/delete" id="deleteBtn" class="btn btn-warning" >
+        <i class="fa fa-trash"></i> Delete</a>
     
       <div class="col-md-offset-1 col-md-10 text-center">
         <ul class="pagination pagination-lg pager" id="myPager"></ul>
@@ -71,7 +74,7 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   function deleteCars(){
     // alert("value is: "+ document.getElementById('priceTextField').value);
     if(document.getElementById('priceTextField').value == ""){
@@ -82,6 +85,6 @@
       document.getElementById("deleteBtn").href="cars/delete/"+document.getElementById('priceTextField').value; 
     }
   }
-  </script>
+  </script> -->
   
 <% include ../partials/footer.ejs %>
